@@ -33,7 +33,51 @@ namespace TriangleUnitTest
      //Assert
      Assert.AreEqual(expected, actual);
  }
+   //3 test cases for isoceles traingle
+    [Test]
+    public void ValidTriangle_Input5and5and3_OutputValidTriangle()
+    {
+        //Arrange
+        int firstSide = 5;
+        int secondSide = 5;
+        int thirdSide = 3;
+        string expected = "Isosceles triangle";
+        //Act
+        string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
 
+        //Assert
+        Assert.AreEqual(expected, actual);
+    }
+
+    [Test]
+    public void ValidTriangle_Input7and7and4_OutputValidTriangle()
+    {
+        //Arrange
+        int firstSide = 7;
+        int secondSide = 7;
+        int thirdSide = 4;
+        string expected = "Isosceles triangle";
+        //Act
+        string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+        //Assert
+        Assert.AreEqual(expected, actual);
+    }
+
+    [Test]
+    public void ValidTriangle_Input6and6and2_OutputValidTriangle()
+    {
+        //Arrange
+        int firstSide = 6;
+        int secondSide = 6;
+        int thirdSide = 2;
+        string expected = "Isosceles triangle";
+        //Act
+        string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+        //Assert
+        Assert.AreEqual(expected, actual);
+    }
             
            
             //-	Three (3) tests for verifying a zero length for one or more sides
