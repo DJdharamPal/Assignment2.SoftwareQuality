@@ -128,6 +128,83 @@ namespace TriangleUnitTest
             }
 
 
+              //5 test cases for scalen traingle
+
+  [Test]
+  public void ValidTriangle_Input3and4and5_OutputValidTriangle()
+  {
+      //Arrange
+      int firstSide = 3;
+      int secondSide = 4;
+      int thirdSide = 5;
+      string expected = "Scalene triangle";
+      //Act
+      string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+      //Assert
+      Assert.AreEqual(expected, actual);
+  }
+
+  [Test]
+  public void ValidTriangle_Input5and6and7_OutputValidTriangle()
+  {
+      //Arrange
+      int firstSide = 5;
+      int secondSide = 6;
+      int thirdSide = 7;
+      string expected = "Scalene triangle";
+      //Act
+      string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+      //Assert
+      Assert.AreEqual(expected, actual);
+  }
+
+  [Test]
+  public void ValidTriangle_Input8and10and12_OutputValidTriangle()
+  {
+      //Arrange
+      int firstSide = 8;
+      int secondSide = 10;
+      int thirdSide = 12;
+      string expected = "Scalene triangle";
+      //Act
+      string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+      //Assert
+      Assert.AreEqual(expected, actual);
+  }
+
+  [Test]
+  public void ValidTriangle_Input9and12and15_OutputValidTriangle()
+  {
+      //Arrange
+      int firstSide = 9;
+      int secondSide = 12;
+      int thirdSide = 15;
+      string expected = "Scalene triangle";
+      //Act
+      string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+      //Assert
+      Assert.AreEqual(expected, actual);
+  }
+
+  [Test]
+  public void ValidTriangle_Input11and13and14_OutputValidTriangle()
+  {
+      //Arrange
+      int firstSide = 11;
+      int secondSide = 13;
+      int thirdSide = 14;
+      string expected = "Scalene triangle";
+      //Act
+      string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+      //Assert
+      Assert.AreEqual(expected, actual);
+  }
+
             //-	Three (3) tests for verifying an invalid response (other than a zero length)
             [Test]
             public void InvalidTriangle_Input1and2and3_OutputInvalidTriangle()
