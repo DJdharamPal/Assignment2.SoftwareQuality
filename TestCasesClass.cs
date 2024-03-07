@@ -17,6 +17,23 @@ namespace TriangleUnitTest
         public class TriangleTest1
 
         {
+
+ // one equilateral triangle
+ [Test]
+ public void ValidTriangle_Input60and60and60_OutputValidTriangle()
+ {
+     //Arrange
+     int firstSide = 60;
+     int secondSide = 60;
+     int thirdSide = 60;
+     string expected = "Equilateral triangle";
+     //Act
+     string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+     //Assert
+     Assert.AreEqual(expected, actual);
+ }
+
             
            
             //-	Three (3) tests for verifying a zero length for one or more sides
